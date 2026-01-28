@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-color: rgb(243, 235, 235);
+    font-family: Arial, sans-serif; /* Optional for cleaner typography */
+}
+
+/* Container styling */
+.container {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(142, 142, 228);
+    height: 60vh; 
+    width: 25vw;
+    max-width: 400px; /* Ensure max width for larger screens */
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.2); /* Slightly refined box shadow */
+    padding: 20px; /* Added some padding */
+    box-sizing: border-box; /* Prevents overflow */
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.7em;
+    font-weight: 600;
+    border-bottom: 0.5px solid whitesmoke;
+    margin-bottom: 20px;
+}
+
+/* Add task section */
+.addtask {
+    display: flex;
+    justify-content: space-between; /* Adjusted for better alignment */
+    margin-bottom: 20px; /* Added space between input and list */
+}
+
+/* Input field styling */
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border */
+    width: 65%; /* Ensures input doesn't overflow */
+    box-sizing: border-box; /* To include padding in width */
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(11, 11, 11); /* Slight highlight on focus */
+}
+
+/* Button styling */
+button {
+    background-color: rgb(249, 248, 146);
+    color: rgb(11, 11, 11);
+    border-radius: 5px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: rgb(233, 231, 77); /* Slightly darker on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Task list styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Subtle hover effect on tasks */
+}
+
+li:last-child {
+    margin-bottom: 0; /* Remove margin from the last list item */
+}
